@@ -1,0 +1,33 @@
+:root {
+  --image-radius: 20px;
+  --padding: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: right;
+    gap:50px;
+    padding: var(--padding);
+    border: 2px solid white;
+    border-radius: calc(var(--image-radius) + var(--padding));
+}
+
+.text{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: var(--image-radius);
+    overflow: hidden;
+}
+
+.image img{
+    display: box;
+    width: 100%;
+    height: auto;
+}
