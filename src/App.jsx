@@ -7,7 +7,7 @@ import ProfileCard from './ProfileCard.jsx';
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
 
         <Routes>
 
