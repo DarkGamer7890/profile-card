@@ -1,33 +1,56 @@
 :root {
   --image-radius: 20px;
-  --padding: 10px;
+  --padding: 20px;
 }
 
 .main{
     display: flex;
     justify-content: right;
-    gap:50px;
+    gap:70px;
     padding: var(--padding);
-    border: 2px solid white;
+    border: 5px solid white;
     border-radius: calc(var(--image-radius) + var(--padding));
+    background-color: black; 
 }
 
-.text{
+.main:hover{
+    filter: drop-shadow(0 0 20px blue);
+    transition: filter 0.2s ease-in-out;
+}
+
+.text1{
+    display: flex;
     text-align: left;
     margin-left: 20px;
 }
 
+.text2{
+    text-align: left;
+    margin-left: 20px;
+    width: 750px;
+    word-wrap: break-word;     /* Break words that are too long */
+    overflow-wrap: break-word; /* Modern alternative */
+    white-space: normal;        /* Allows text to wrap */
+}
+
 .image{
     display: flex;
+    border-radius: var(--image-radius);
+    border: 5px solid white;
+    width: 300px;           /* or a percentage, e.g., 40% of card */
+    height: 400px;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    border-radius: var(--image-radius);
     overflow: hidden;
 }
 
 .image img{
-    display: box;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image:hover{
+    filter: drop-shadow(0 0 20px white);
+    transition: filter 0.2s ease-in-out;
 }

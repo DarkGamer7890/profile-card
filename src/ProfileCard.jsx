@@ -9,9 +9,15 @@ function ProfileCard(){
         <>
             <div className='main'>
                 <div className="text">
-                    <h1>Name: {name}</h1>
-                    <h1>About:</h1>
-                    <h2>{about}</h2>
+                    <div className="text1">
+                        <h1>Name: {name}</h1>
+                    </div>
+                    <div className="text2">
+                        <h1>About:</h1>
+                        <ul>
+                            <h2>{about.split(/\. |\n/).map((sentence, index) => {return <li key={index}>{sentence}</li>})}</h2>
+                        </ul>
+                    </div>
                 </div>
                 <div className="image">
                     {image && <img src={URL.createObjectURL(image)} alt="profile-image" />}

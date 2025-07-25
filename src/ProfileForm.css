@@ -1,0 +1,84 @@
+.form{
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 10%;
+    height: 600px;
+    width: 600px;
+}
+
+form:hover {
+    filter: drop-shadow(0 0 20px blue);
+    transition: filter 0.3s ease-in-out;
+}
+
+#label1{
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+
+#label2{
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
+#label3{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+}
+
+#button{
+    display: grid;
+    text-align: center;
+    justify-content: left;
+    align-items: left;
+}
+
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 4px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* So padding doesn't affect total width */
+}
+
+input:focus {
+    border-color: #007bff;  /* Change border color when input is focused */
+    outline: none;
+}
+
+input:hover {
+    filter: drop-shadow(0 0 20px white);
+    transition: filter 0.2s ease-in-out;
+}
+
+textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border: 4px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 600px;
+    height: 300px;
+    resize: none;                       
+    box-sizing: border-box; /* So padding doesn't affect total width */
+}
+
+textarea:focus {
+    border-color: #007bff;  /* Change border color when input is focused */
+    outline: none;
+}
+
+textarea:hover {
+    filter: drop-shadow(0 0 20px white);
+    transition: filter 0.2s ease-in-out;
+}
+
