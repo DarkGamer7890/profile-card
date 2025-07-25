@@ -1,16 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ProfileForm from './ProfileForm';
+import ProfileForm from './ProfileForm.jsx';
 import "./App.css"
-import ProfileCard from './ProfileCard';
+import ProfileCard from './ProfileCard.jsx';
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+
         <Routes>
+
           <Route path="/" element={<ProfileForm />} />
-            <Route path="ProfileCard.jsx" element={<ProfileCard/>} />
+          <Route path="/profileCard" element={<ProfileCard />} />
+
         </Routes>
       </BrowserRouter>
     </>

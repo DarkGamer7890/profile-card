@@ -30,7 +30,7 @@ function ProfileForm(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("ProfileCard.jsx", { state })
+        navigate("/profileCard", { state })
     }
 
     return (
